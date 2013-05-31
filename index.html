@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>ColorBox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+		<script src="jquery.colorbox.js"></script>
+	</head>
+	<body>
+		<h1>ColorBox Demonstration</h1>
+		<h2>Elastic Transition</h2>
+		<p><a class="colorBox" data-cbset="nofollow" href="content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
+		<h2>Fade Transition</h2>
+		<p><a class="colorBox" data-cbset="nofollow" data-transition="fade" href="content/ohoopee2.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
+		
+		<h2>No Transition + fixed width and height (900px*600px of screen size)</h2>
+		<p><a class="colorBox" data-cbset="nofollow-900-600" data-transition="none"  href="content/ohoopee3.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
+
+		<h2>Other Content Types</h2>
+		<p><a class="youtube colorBox" data-cbset="iframe-425-344" href="http://www.youtube.com/embed/617ANIA5Rqs?rel=0&amp;wmode=transparent" title="The Knife: We Share Our Mother's Health">Flash / Video (Iframe/Direct Link To YouTube)</a></p>
+		<p><a class="vimeo colorBox" data-cbset="iframe-500-409" href="http://player.vimeo.com/video/2285902" title="R&ouml;yksopp: Remind Me">Flash / Video (Iframe/Direct Link To Vimeo)</a></p>
+		<p><a class="iframe colorBox" data-cbset="iframe" href="http://wikipedia.com">Outside Webpage (Iframe)</a></p>
+		<p><a class="inline colorBox" data-cbset="inline-425-344" href="#inline_content">Inline HTML</a></p>
+
+		<!-- This contains the hidden content for inline calls -->
+		<div style='display:none'>
+			<div id='inline_content' style='padding:10px; background:#fff;'>
+			<p><strong>This content comes from a hidden element on this page.</strong></p>
+			</div>
+		</div>
+	</body>
+</html>
